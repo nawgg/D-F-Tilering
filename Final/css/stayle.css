@@ -1,0 +1,423 @@
+/* Making sure the page always fills the screen and removing any unwanted space */
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Sections should always be as tall as the screen, with content centered */
+section {
+    min-height: 100vh; /* Each section will be at least as tall as the screen */
+    display: flex; /* Use flexbox to align content */
+    align-items: center; /* Center items vertically */
+}
+
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Creates a soft shadow for depth */
+    letter-spacing: 0.05em; /* Adds a bit of spacing between letters for a clean look */
+}
+
+/* Making paragraphs easier to read with proper spacing */
+p {
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+
+.navbar {
+    background-color: #540B0E; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #9a3f3f; 
+}
+
+
+:root {
+    --praimary-color: #925456; 
+    --accent-color: #b97d82; 
+    --font-heading: 'Poppins', sans-serif; 
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 2rem; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    }
+
+.logo .first-name {
+    color: var(--praimary-color);
+}
+
+.logo .last-name {
+    color: var(--accent-color);
+}
+
+.logo:hover .first-name {
+    color: var(--accent-color);
+}
+
+.logo:hover .last-name {
+    color: var(--praimary-color);
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    margin-top: 5px;
+    }
+
+ .banner-left h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #540B0E;
+    
+}
+
+.banner-left h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #540B0E;
+    margin-bottom: 15px;
+}
+
+
+.banner-left h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #8A3034;
+    margin-bottom: 20px;
+}
+
+.banner-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5F393C;
+}
+
+
+
+.banner-btn:hover {
+    background-color: #8A3034;
+}
+
+.circle-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.circle-container .circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+#about {
+    background-color: #540B0E;
+    color: #f3e9dc; 
+    padding: 50px 0; 
+    text-align: center; 
+}
+
+    
+
+#about p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #f9d8b3; 
+    margin-bottom: 15px;
+}
+
+#about blockquote {
+    color: #f3e9dc; 
+     font-style: italic;
+     padding-left: 15px; 
+     margin: 20px auto; 
+ }
+
+ .card:hover {
+    box-shadow: 0 45px 9px rgba(0, 0, 0, 0.1); 
+    border-color:  #de5779; 
+}
+
+.list-group-item:hover {
+    background-color: #F8D9E1;
+
+}
+
+
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f3e9dc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: #540B0E;  
+    border-radius: 5px;
+}
+/* Keyframes for animating the skill bar fill */
+
+@keyframes fillSkill {
+    0% { width: 0%; }
+    100% { width: var(--skill-level, 85%); }
+}
+/* Applying the animation to the skill bar fill */
+.skill-bar-fill {
+    animation: fillSkill 10s ease-in-out forwards;
+}
+
+.btnel {
+    background-color: var(--primary-color); 
+    color: #fff; 
+    font-size: 1rem;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+.btnel:hover {
+    background-color: var(--secondary-color); 
+    color: #000; 
+    transform: scale(1.05); 
+}
+
+
+
+#portfolio .card-img-top {
+    width: 100%;           
+    height: 300px;        
+    object-fit: cover;     
+    object-position: center; 
+}
+
+#contact {
+    padding: 50px 0;
+}
+
+
+
+#contact form .form-control {
+    border: 2px solid #ba646a; 
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact form .form-control:focus {
+    border-color: #540B0E;
+    box-shadow: 0 0 10px rgba(84, 11, 14, 0.5); 
+}
+
+#contact button {
+    background-color: #540B0E; 
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact button:hover {
+    background-color: #a2292f; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.social-link {
+    border: 2px solid #540B0E; 
+    color: #540B0E;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.social-link:hover {
+    background-color: #540B0E; 
+    color: #fff;
+    border-color: #540B0E;
+    transform: translateY(-5px);
+}
+
+
+ #contact .highlight {
+    color: #540B0E; 
+    font-weight: bold;
+}
+
+
+:root {
+    --primary-color: #540B0E; /* Main theme color */
+    --secondary-color: #f9d8b3; /* Highlight color */
+    --background-light: #f9f4f1; /* Light background */
+    --background-dark: #2a2a2a; /* Dark background */
+    --text-light: #540B0E; /* Dark red for text */
+    --text-dark: #f3e9dc; /* Light text for dark mode */
+    --accent-color-light: #ba646a; /* Accent for light mode */
+    --accent-color-dark: #a2292f; /* Accent for dark mode */
+    --button-bg-light: #f3e9dc; /* Button background for light mode */
+    --button-bg-dark: #540B0E; /* Button background for dark mode */
+    --shadow-light: rgba(0, 0, 0, 0.2); /* Light mode shadow */
+    --shadow-dark: rgba(255, 255, 255, 0.2); /* Dark mode shadow */
+}
+
+
+main {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+input#light-theme-setting:checked ~ main {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+input#dark-theme-setting:checked ~ main {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+
+.moone {
+    position: fixed; /* Fixed position on the screen */
+    background-color: var(--accent-color-light); /* Default accent color for light mode */
+    border-radius: 25px; /* Rounded edges for aesthetic */
+    bottom: 20px; /* Positioned at the bottom-left */
+    left: 20px;
+    display: flex; /* Aligns elements inside horizontally */
+    gap: 10px; /* Spacing between internal elements */
+    align-items: center;
+    z-index: 1000; /* Ensures it stays above other elements */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+input#dark-theme-setting:checked ~ main .moone {
+    background-color: var(--accent-color-dark);
+}
+
+label.theme-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+label.theme-label:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px var(--shadow-light);
+}
+
+input#dark-theme-setting:checked ~ main label.theme-label:hover {
+    box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+
+input#dark-theme-setting:checked ~ main .banner-btn {
+    background-color: var(--button-bg-dark);
+    color: var(--text-dark);
+    box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+.banner-btn {
+    background-color: var(--button-bg-light);
+    color: var(--primary-color);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px var(--shadow-light);
+}
+
+input#dark-theme-setting:checked ~ main .skill-bar {
+    background-color: var(--background-dark);
+}
+
+input#dark-theme-setting:checked ~ main .skill-bar-fill {
+    background-color: var(--secondary-color);
+}
+
+
+input#dark-theme-setting:checked ~ main #contact {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+    box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+input#dark-theme-setting:checked ~ main .navbar {
+    box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+input#dark-theme-setting:checked ~ main #contact form .form-control {
+    border-color: var(--accent-color-dark);
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+input#dark-theme-setting:checked ~ main .social-link {
+    border-color: var(--text-dark);
+    color: var(--text-dark);
+    box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+
+footer {
+    background-color: #540B0E;
+    color: #F9F6F2; 
+    padding: 20px 0; 
+    font-size: 0.9rem; 
+}
+
+footer .footer-link {
+    color: #F9F6F2; 
+    transition: color 0.3s ease; 
+    font-size: 1.5rem; 
+}
+
+footer .footer-link:hover {
+    color: #a34e48; 
+}
+
+footer p {
+    margin-bottom: 5px; 
+}
+
+footer em {
+    font-style: italic;
+    color: #b6715a; 
+}
+
+
+.instagram-icon {
+    width: 24px; 
+    height: 24px;
+    object-fit: cover; 
+    display: inline-block;
+    vertical-align: middle; 
+    transition: transform 0.3s ease; 
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1); 
+}
